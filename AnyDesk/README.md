@@ -4,7 +4,7 @@ AnyDesk :  It is a remote access and remote control software
 | S.No | Artifact            | Source   | Comment |
 |:-----:|:----------------|:---------|:--------------------|
 |1  | AnyDesk.exe --install “%ProgramFiles(x86)%AnyDesk” --start-with-win --silent   | Command  | Installation String  |
-|2  | echo "<Password> |" AnyDesk.exe --set-password  | Command  | Password for remote connection can be set using command line  |
+|2  | echo &lt;my_password&gt \| anydesk.exe --set-password | Command  | Password for remote connection can be set using command line  |
 |3  | %ProgramFiles(x86)%\AnyDesk\  | Installation Path  | -  |
 |4  | %ProgramFiles%\AnyDesk\  | Installation Path  | -  |
 |5  | %ProgramData%\AnyDesk\ad_svc.trace  | Log File Path  | -  |
@@ -33,7 +33,5 @@ In "connection_trace.txt" file you will get following things</br>
 <li>Passwd: Indicate connection was established by providing Password</li>
 <li>Token: Indicate connection was established by stored Password</li>
 </ol>
-<li>AnyDesk ID of Source</li>
+<li>AnyDesk ID of Source Machine</li>
 </ol>
-Reference:
-1. https://twitter.com/malmoeb/status/1668504337910468612
